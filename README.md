@@ -1,2 +1,2 @@
-#my npm page
-this is may attemp to create a npm page
+# My npm page
+this is my attemp to create a npm page.
