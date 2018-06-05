@@ -9,41 +9,49 @@
 </head>
 <body>
   <nav>
-    <div>
-      <a href="#" class="heart">::</a>
+    <div class="container">
+      <a href="#" class="top-left">&#10084</a>
       <span>Neophobe Plebeian Mumpsimus</span>
-    </div>
-    <ul>
-      <li><a href="#">npm Enterprise</a></li>
-      <li><a href="#">features</a></li>
-      <li><a href="#">pricing</a></li>
-      <li><a href="#">documentation</a></li>
-      <li><a href="#">support</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <div>
-      <img src="images/npm-logo.png" alt="npm logo">
-      <div>
-        <form action="/search.php">
-        <input type="text" placeholder="Search..." name="serach">
-           <button type="submit">
-            <i class="fa-fa-search">::</i>
-           </button>
-         </form>
-      </div>
-      <ul>
-        <li><a href="#">sign up</a></li>
-        <li><a href="#">login</a></li>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">documentation</a></li>
+        <li><a href="#">support</a></li>
       </ul>
-      <img src="images/bear-logo.png" alt="bear logo">
     </div>
-    <article>
+    <div class="clearfix"></div>
+  </nav>
+  
+  <!-- Header -->
+  <header class="header-background">
+    <div class="container">
+      <div class="npm-logo">
+        <img src="images/npm-logo.png" alt="npm logo">
+      </div>
+      <div class="search-box">
+        <form action="#">
+          <div>
+            <input type="text" placeholder="find packages..." name="serach"/>
+            <input type="button" id="submit" value="search"/>
+          </div>
+        </form>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="#">sign up</a></li>
+          <li>or</li>
+          <li><a href="#">log in</a></li>
+        </ul>
+        <img id="bear-logo" src="images/bear-logo.png" alt="bear logo">
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="header-main" class="container header-intro-txt">
       <h1>Build amazing things</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nostrum est. Nulla suscipit laboriosam quia beatae eveniet doloribus est ex?</p>
       <a href="#">Sign up for npm</a>
-    </article> 
+    </div> 
   </header>
 
   <!-- Section Orgs -->

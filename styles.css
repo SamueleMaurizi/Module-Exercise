@@ -1,0 +1,164 @@
+/* General */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Source Sans Pro";
+	/*font-size: 10px;*/
+	font-weight: 300;
+	line-height: 2em;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* End General*/
+
+/* Nav */
+nav {
+  background-color: #c12127;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  line-height: 1;
+  /*height: 100px;*/
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.top-left{
+  padding: 0;
+  margin: 0 20px;
+}
+
+.top-links {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Header */
+.header-background {
+  color:white;
+  background-color: rgb(33, 89, 122);
+  padding: 10px 0;
+}
+
+.npm-logo {
+  float: left;
+  width: 150px;
+  height: 50px;
+  margin: 0 0 0 20px;
+}
+
+.npm-logo img {
+  width: auto;
+  height: 100%;
+}
+
+.search-box {
+  float: left;
+  width: 810px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+form input {
+  box-sizing: border-box;
+}
+
+form > div {
+  position: relative;
+  margin-right: 70px;
+}
+
+form input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 15px;
+  background: rgb(33, 89, 122);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #538aaa;
+}
+
+form input[type="button"] {
+  display: block;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 15px;
+  padding: 0 5px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(33, 89, 122);
+  border: 1px solid #538aaa;
+  border-left: none;
+}
+
+.header-right {
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.header-right li {
+  float: left;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-right a {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+#bear-logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 0 0 0 5px;
+}
+
+.header-intro-txt {
+  width: 50%;
+  height: 330px;
+  margin: 0 auto;
+  /*background-image: url(https://static.npmjs.com/images/hero-cityscape.svg);*/
+}
+
+#header-main h1 {
+  font-size: 50px;
+  font-weight: 100;
+  padding: 30px 0 10px 0;
+}
+
+#header-main p {
+  width: 60%;
+  line-height: 1.5;
+  padding: 20px 10px;
+}
