@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -54,19 +54,24 @@ nav a {
   display: inline-block;
   margin: 0 10px;
 }
+/* End Navbar*/
 
 /* Header */
 .header-background {
   color:white;
   background-color: rgb(33, 89, 122);
-  padding: 10px 0;
+  padding: 10px 0 0 0;
+}
+
+.header-search {
+  position: relative;
 }
 
 .npm-logo {
-  float: left;
+  position: absolute;
   width: 150px;
   height: 50px;
-  margin: 0 0 0 20px;
+  left: 20px;
 }
 
 .npm-logo img {
@@ -74,11 +79,18 @@ nav a {
   height: 100%;
 }
 
-.search-box {
-  float: left;
-  width: 810px;
+.header-right {
+  position: absolute;
+  width: 200px;
   height: 50px;
-  margin: 0 10px;
+  top: 0;
+  right: 10px;
+  margin-left: 10px;
+}
+
+.search-box {
+  height: 50px;
+  margin: 0 220px 0 170px;
 }
 
 form input {
@@ -114,13 +126,7 @@ form input[type="button"] {
   background: rgb(33, 89, 122);
   border: 1px solid #538aaa;
   border-left: none;
-}
-
-.header-right {
-  float: left;
-  position: relative;
-  width: 200px;
-  height: 50px;
+  cursor: pointer;
 }
 
 .header-right li {
@@ -145,28 +151,38 @@ form input[type="button"] {
 }
 
 .header-intro-txt {
-  width: 900px; /*changed from 60% to 900px*/
-  height: 330px;
+  max-width: 1500px;
+  height: 400px;
   margin: 0 auto;
-  /*background-image: url(https://static.npmjs.com/images/hero-cityscape.svg);*/
-  /*backgr img is broken?*/
+  background-image: url(images/city-scape.svg);/*is not dispayed in vs code live server*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 100%, 0;
+}
+
+.header-box-txt {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #header-main h1 {
   font-size: 50px;
   font-weight: 100;
-  padding: 40px 0 10px 0;
+  padding: 60px 0 10px 0;
 }
 
 #header-main p {
   width: 60%;
   line-height: 1.2;
-  padding: 20px 10px;
+  padding: 20px 0;
 }
 
 #header-main a {
   display: inline-block;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 ;
   text-decoration: none;
   padding: 4px 25px;
   color: white;
@@ -178,8 +194,7 @@ form input[type="button"] {
 /*Section Collaboration*/
 
 .collab-background {
-  height: 400px;
-  padding: 10px 0;
+  height: 500px;
   color: white;
   background-color: rgb(39,53,71);
 }
@@ -187,23 +202,31 @@ form input[type="button"] {
 .collab-main {
   position: relative;
   width: 900px;
-  height: 400px;
+  height: 500px;
   margin: 0 auto;
-  border: 2px solid pink; /*temporary border*/
-  background-image: url(/images/collaboration.svg);
+  background-image: url(images/collaboration.svg);
   background-repeat: no-repeat;
   background-position: 0, 50%;
-  background-size: 45%;
+  background-size: 50% auto;
 }
 
 .collab-text {
-  position: relative;
-  float: right;
+  position: absolute;
   width: 50%;
-  display: block;
-  height: 200px;
+  right: -70px;
   top: 50%;
-  margin: -100px -20px 0 0;
+  transform: translate(0, -50%);
+}
+
+.collab-text h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-left: -20px;
+  padding-bottom: 20px;
+}
+
+.collab-text ul {
+  padding-bottom: 30px;
 }
 
 .collab-text a {
@@ -211,8 +234,122 @@ form input[type="button"] {
   color: white;
 }
 
+.collab-text p {
+  margin-left: -20px;
+}
+
 #signOrg {
   background-color: rgb(203, 56, 55);
-  padding: 4px 25px;
+  padding: 8px 25px;
   border-radius: 20px;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.collab-text p {
+  padding-top: 5px;
+}
+
+
+/*Section what is npm*/
+.what-background {
+  height: 500px;
+  color: white;
+  background-color: rgb(36, 129, 183);
+  
+}
+
+.what-main {
+  max-width: 1500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(images/forklift.svg);/*not displayed in vs code live server*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 100%, 0;
+}
+
+.what-box-txt {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.what-txt {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+.what-txt h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.what-txt p {
+  width: 33%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.what-txt a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(49, 68, 88);
+  padding: 8px 25px;
+  border-radius: 20px;
+}
+
+
+
+/*Section Cards*/
+.cards-background {
+  background-color: white;
+}
+
+.cards-main {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
+
+.cards-title h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  color: rgb(83, 88, 98);
+} 
+
+.cards-title p {
+  padding: 20px 0 30px 0;
+  color: rgb(135, 145, 156);
+}
+
+.cards {
+  width: 33%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  /*box-shadow: 0 2px 4px 1px rgba(135,145,156, .2);*/
+  text-align: center;
+}
+
+.cards h4 {
+  color: rgb(83, 88, 98);
+}
+
+.cards p {
+  width: 66%;
+  display: inline-block;
+  color: rgb(135, 145, 156);
+  line-height: 1.2;
+}
+
+.cards a {
+  text-decoration: none;
+  color: rgb(208, 74, 73);
 }
